@@ -1,0 +1,224 @@
+[
+    {
+        "key": "group_641a8f567ce54",
+        "title": "Wedding",
+        "fields": [
+            {
+                "key": "field_641a8f57a25b8",
+                "label": "Banner Details",
+                "name": "banner_details",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_641a8fa4a25b9",
+                        "label": "Groom Name",
+                        "name": "groom_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_641a8fb3a25ba",
+                        "label": "Bride Name",
+                        "name": "bride_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_641a8fc9a25bb",
+                        "label": "Banner Date",
+                        "name": "banner_date",
+                        "aria-label": "",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d\/m\/Y",
+                        "return_format": "d\/m\/Y",
+                        "first_day": 1
+                    },
+                    {
+                        "key": "field_641a8fdca25bc",
+                        "label": "Banner Address",
+                        "name": "banner_address",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_641ac40c94d52",
+                "label": "Banner Slider",
+                "name": "banner_slider",
+                "aria-label": "",
+                "type": "photo_gallery",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "fields[test_gallery": {
+                    "edit_modal": "Default",
+                    "images_limit": "",
+                    "remove_edit_button": "No",
+                    "remove_delete_button": "No"
+                },
+                "edit_modal": "Default"
+            },
+            {
+                "key": "field_641ac5400cb52",
+                "label": "Banner Slider Portrait",
+                "name": "banner_slider_portrait",
+                "aria-label": "",
+                "type": "photo_gallery",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "fields[": {
+                    "edit_modal": "Default",
+                    "images_limit": "",
+                    "remove_edit_button": "No",
+                    "remove_delete_button": "No"
+                },
+                "edit_modal": "Default"
+            },
+            {
+                "key": "field_641bda8f3b579",
+                "label": "Intros",
+                "name": "intros",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_641bdaa73b57a",
+                        "label": "Intro Title",
+                        "name": "intro_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_641bdab73b57b",
+                        "label": "Intro Text",
+                        "name": "intro_text",
+                        "aria-label": "",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "basic",
+                        "media_upload": 0,
+                        "delay": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-wedding.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
