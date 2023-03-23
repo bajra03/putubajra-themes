@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Page Coming Soon */
+#section-comingsoon {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Mr Dafoe', cursive;
+  flex-direction: column;
+}
+
+#section-comingsoon h1 {
+  font-size: 6rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#section-comingsoon ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+#section-comingsoon ul a {
+  display: inline-flex;
+  font-size: 1.2rem;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  color: #f1f5f9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: all .2s ease-in-out;
+}
+
+#section-comingsoon ul a:hover {
+  background: #334155;
+}
