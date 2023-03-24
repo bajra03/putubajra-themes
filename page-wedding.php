@@ -11,6 +11,10 @@ $banner_sliders_portrait = get_field('banner_slider_portrait');
 $intros = get_field('intros');
 ?>
 <style>
+  hr {
+    background-image: url("<?php echo get_template_directory_uri() . '/assets/images/divider.svg'; ?>");
+  }
+
   @media (min-width: 1024px) {
     <?php foreach ($banner_sliders as $key => $banner) { ?>body .banner__slider .banner__slider__slide.slide<?php echo $key + 1; ?> {
       background-image: url('<?php echo $banner['full_image_url']; ?>') !important;
@@ -74,32 +78,17 @@ $intros = get_field('intros');
       <h2 class="profile__info__name text-header">Belamuy</h2>
       <p class="profile__info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum numquam ratione praesentium, vel hic tempore possimus magni quam! Cupiditate illo pariatur dicta, corporis voluptates incidunt quidem optio molestiae nulla!</p>
     </div>
+    <hr>
+    <ul class="profile__socials">
+      <li><a href="#"><i class="fa-brands fa-instagram social-ig"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook social-fb"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-tiktok social-tiktok"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in social-linkedin"></i></a></li>
+    </ul>
+    <hr>
   </div><!-- EOF Profile Details Groom -->
 </section>
 <!-- EOF Section Profile Groom -->
-
-<!-- Section Profile Bride -->
-<section class="profile profile--groom">
-  <!-- Slider Profile Bride -->
-  <div class="profile__slider profile__slider--groom swiper-slider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-booklist166.jpg');"></div>
-    </div>
-  </div> <!-- EOF Slider Profile Bride -->
-
-  <!-- Profile Details Bride -->
-  <div class="profile__details">
-    <figure class="profile__picture">
-      <img src="http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-booklist166.jpg" alt="Profile picture groom" aria-hidden="true">
-    </figure>
-    <div class="profile__info">
-      <div class="profile__info__dob">27 . 02</div>
-      <h2 class="profile__info__name text-header">Patreciao</h2>
-      <p class="profile__info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum numquam ratione praesentium, vel hic tempore possimus magni quam! Cupiditate illo pariatur dicta, corporis voluptates incidunt quidem optio molestiae nulla!</p>
-    </div>
-  </div><!-- EOF Profile Details Bride -->
-</section>
-<!-- EOF Section Profile Bride -->
 
 
 <?php get_footer('wedding'); ?>
