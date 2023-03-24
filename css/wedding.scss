@@ -41,6 +41,16 @@ body {
   font-family: $text-body-1;
 }
 
+p {
+  letter-spacing: .3px;
+  line-height: 1.5;
+  font-family: $text-body-1;
+}
+
+.text-header {
+  font-family: $text-header-2;
+}
+
 // Section Banner
 .banner {
   min-height: 100vh;
@@ -108,7 +118,6 @@ body {
     &__name {
       font-size: 3.5rem;
       line-height: 1em;
-      font-family: $text-header-2;
       margin: 2.5rem 0 4rem;
 
       h1 {
@@ -153,20 +162,80 @@ body {
 
     h2 {
       font-size: 2.5rem;
-      font-family: $text-header-2;
       line-height: 1.5;
       letter-spacing: .5px;
       margin-bottom: 1rem;
     }
-
-    p {
-      letter-spacing: .3px;
-      line-height: 1.5;
-      font-family: $text-body-2;
-    }
   }
 }
 // EOF Section Intro
+
+// Section Profile Details
+.profile {
+  text-align: center;
+  position: relative;
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: top center;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000000 32.86%, rgba(0, 0, 0, 0.46) 64.8%, #000000 98.26%);
+        display: block;
+      }
+    }
+  }
+
+  &__picture {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    padding: 250px 0 25px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__info {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 100%;
+
+    &__dob {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+    }
+
+    &__name {
+      font-size: 3rem;
+      line-height: 1.2em;
+      margin-bottom: 1rem;
+    }
+  }
+}
+// EOF Section Profile Details
 
 // Footer
 footer {

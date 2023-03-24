@@ -6,9 +6,26 @@ const generalSliderOpt = {
   },
 };
 
-const generalSlider = (elm) =>
-{
+const generalSlider = (elm) => {
   return new Swiper(elm, generalSliderOpt);
 };
 
-generalSlider('.banner__slider ')
+const sliderWithThumb = (elm, elmThumb) => {
+  return new Swiper(elm, {
+    effect: 'fade',
+    loop: true,
+    autoplay: true,
+    thumbs: {
+      swiper: new Swiper (elmThumb, {
+        spaceBetween: 5,
+        slidesPerView: 3,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        loop: true,
+        autoplay: true,
+      }),
+    },
+  });
+};
+
+generalSlider('.banner__slider ');
