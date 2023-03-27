@@ -64,9 +64,9 @@ $intros = get_field('intros');
   <!-- Slider Profile Groom -->
   <div class="profile__slider profile__slider--groom swiper-slider">
     <div class="swiper-wrapper profile__slider__wrapper">
-      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-booklist166.jpg');"></div>
-      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-mc166.jpg');"></div>
       <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/kcom-166-e-bike-banner.jpg');"></div>
+      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-mc166.jpg');"></div>
+      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-booklist166.jpg');"></div>
     </div>
   </div> <!-- EOF Slider Profile Groom -->
 
@@ -82,7 +82,7 @@ $intros = get_field('intros');
       <h2 class="profile__info__name text-header">Belamuy</h2>
       <p class="profile__info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum numquam ratione praesentium, vel hic tempore possimus magni quam! Cupiditate illo pariatur dicta, corporis voluptates incidunt quidem optio molestiae nulla!</p>
       <hr>
-      <ul class="profile__socials">
+      <ul class="profile__info__socials">
         <li><a href="#"><i class="fa-brands fa-instagram social-ig"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-facebook social-fb"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-tiktok social-tiktok"></i></a></li>
@@ -93,6 +93,41 @@ $intros = get_field('intros');
   </div><!-- EOF Profile Details Groom -->
 </section>
 <!-- EOF Section Profile Groom -->
+
+<!-- Section Profile Bride -->
+<section class="profile profile--bride">
+  <!-- Slider Profile Bride -->
+  <div class="profile__slider profile__slider--bride swiper-slider">
+    <div class="swiper-wrapper profile__slider__wrapper">
+      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-booklist166.jpg');"></div>
+      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-mc166.jpg');"></div>
+      <div class="swiper-slide profile__slider__slide" style="background-image: url('http://localhost/tityang/wp-content/uploads/2023/03/kcom-166-e-bike-banner.jpg');"></div>
+    </div>
+  </div> <!-- EOF Slider Profile Bride -->
+
+  <!-- Profile Details Bride -->
+  <div class="profile__details">
+
+    <figure class="profile__picture swiper-wrapper">
+      <img src="http://localhost/tityang/wp-content/uploads/2023/03/images_karmagroup_banner-mc166.jpg" alt="Profile picture bride" aria-hidden="true">
+    </figure>
+
+    <div class="profile__info">
+      <div class="profile__info__dob">27 . 02</div>
+      <h2 class="profile__info__name text-header">Patrecia</h2>
+      <p class="profile__info__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum numquam ratione praesentium, vel hic tempore possimus magni quam! Cupiditate illo pariatur dicta, corporis voluptates incidunt quidem optio molestiae nulla!</p>
+      <hr>
+      <ul class="profile__info__socials">
+        <li><a href="#"><i class="fa-brands fa-instagram social-ig"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook social-fb"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-tiktok social-tiktok"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in social-linkedin"></i></a></li>
+      </ul>
+      <hr>
+    </div>
+  </div><!-- EOF Profile Details Bride -->
+</section>
+<!-- EOF Section Profile Bride -->
 
 
 <?php get_footer('wedding'); ?>

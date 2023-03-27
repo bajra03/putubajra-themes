@@ -28,8 +28,9 @@ const sliderWithThumb = (elm, elmThumb) => {
   });
 };
 
-generalSlider('.profile__slider--groom');
 generalSlider('.banner__slider');
+generalSlider('.profile__slider--groom');
+generalSlider('.profile__slider--bride');
 
 jQuery(document).ready(function ($) {
   // jQUery Code goes here
