@@ -182,6 +182,7 @@ $brideYear = date("Y", $datesBride);
     <div class="profile__info">
       <div class="profile__info__dob"><?php echo $brideDate; ?> . <?php echo $brideMonth; ?></div>
       <h2 class="profile__info__name text-header"><?php echo $section_bride['name']; ?></h2>
+      <hr>
       <div class="profile__info__desc">
         <?php echo $section_bride['description']; ?>
       </div>
