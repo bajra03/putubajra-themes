@@ -99,7 +99,7 @@ $brideYear = date("Y", $datesBride);
 </section>
 <!-- EOF Section Banner -->
 
-<!-- Section ucapan pengantar -->
+<!-- Section Intro -->
 <section class="intro">
   <div class="intro__container">
     <?php if ($intros["intro_image"]["url"]) { ?>
@@ -111,7 +111,7 @@ $brideYear = date("Y", $datesBride);
     <p><?php echo $intros['intro_text']; ?></p>
   </div>
 </section>
-<!-- EOF Section ucapan pengantar -->
+<!-- EOF Section Intro -->
 
 <!-- Section Profile Groom -->
 <section class="profile profile--groom">
@@ -127,7 +127,7 @@ $brideYear = date("Y", $datesBride);
   </div> <!-- EOF Slider Profile Groom -->
   <!-- Profile Details Groom -->
   <div class="profile__details">
-    <figure class="profile__picture swiper-wrapper">
+    <figure class="profile__picture">
       <img src="<?php echo $section_groom['profile_picture']['url']; ?>" alt="Profile picture groom" aria-hidden="true">
     </figure>
     <div class="profile__info">
@@ -174,11 +174,9 @@ $brideYear = date("Y", $datesBride);
 
   <!-- Profile Details Bride -->
   <div class="profile__details">
-
-    <figure class="profile__picture swiper-wrapper">
+    <figure class="profile__picture">
       <img src="<?php echo $section_bride['profile_picture']['url']; ?>" alt="Profile picture bride" aria-hidden="true">
     </figure>
-
     <div class="profile__info">
       <div class="profile__info__dob"><?php echo $brideDate; ?> . <?php echo $brideMonth; ?></div>
       <h2 class="profile__info__name text-header"><?php echo $section_bride['name']; ?></h2>
@@ -208,6 +206,5 @@ $brideYear = date("Y", $datesBride);
   </div><!-- EOF Profile Details Bride -->
 </section>
 <!-- EOF Section Profile Bride -->
-
 
 <?php get_footer('wedding'); ?>
