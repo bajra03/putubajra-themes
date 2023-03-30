@@ -239,7 +239,7 @@ hr {
 <section class="venue">
   <div class="venue__info">
     <div class="venue__info__title">
-      <h2 class="text-header">Acara Kami</h2>
+      <h2 class="text-header">Waktu & Tempat</h2>
     </div>
     <hr>
     <div class="venue__info__subtitle">
@@ -258,8 +258,8 @@ hr {
           Bhuana,<br> Beng, Kabupaten Gianyar, Bali</div>
       </div>
     </div>
-    <a href="https://goo.gl/maps/pu8Db9E6KeK4mpXTA" target="_blank" rel="noopener" class="btn btn--primary">Buka
-      Maps</a>
+    <a href="https://goo.gl/maps/pu8Db9E6KeK4mpXTA" target="_blank" rel="noopener" class="btn btn--primary"><i
+        class="fa-solid fa-map"></i> Buka Map</a>
   </div>
   <div class="venue__map">
     <iframe
@@ -269,5 +269,37 @@ hr {
   </div>
 </section>
 <!-- EOF Section Venue -->
+
+<!-- Section Countdown -->
+<section class="section-countdown">
+  <div class="countdown">
+    <div class="countdown__title">
+      <h2 class="text-header">Menuju Hari Bahagia</h2>
+    </div>
+    <hr>
+    <div class="countdown__quote">
+      Dua jiwa namun satu pikiran, dua hati namun satu perasaan, dua keinginan namun satu tujuan. #satujuan
+    </div>
+    <div class="countdown__timer">
+      <div class="countdown__timer__inner countdown__timer__inner--day">
+        <span class="countdown__timer__day">0</span>
+        Hari
+      </div>
+      <div class="countdown__timer__inner countdown__timer__inner--hour">
+        <span class="countdown__timer__hour">0</span>
+        Jam
+      </div>
+      <div class="countdown__timer__inner countdown__timer__inner--minute">
+        <span class="countdown__timer__minute">0</span>
+        Menit
+      </div>
+      <div class="countdown__timer__inner countdown__timer__inner--second">
+        <span class="countdown__timer__second">0</span>
+        Detik
+      </div>
+    </div>
+  </div>
+</section>
+<!-- EOF Section Countdown -->
 
 <?php get_footer('wedding'); ?>

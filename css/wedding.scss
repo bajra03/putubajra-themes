@@ -16,6 +16,8 @@ $color-linkedin: #0a66c2;
 $color-fb: #1877f2;
 $color-gold: #A47E3B;
 $transition-default: 0.2s ease-in-out;
+$gradient-y-mobile: linear-gradient(0deg, rgba(0, 0, 0, 1) 32.86%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 1) 98%);
+$gradient-y-desktop: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 98%);
 
 // Function
 @mixin tablet {
@@ -164,7 +166,7 @@ hr {
     &__name {
       font-size: 3rem;
       line-height: 1em;
-      margin: 2.5rem 0 4rem;
+      margin: 2.5rem 0 6rem;
 
       h1 {
         span {
@@ -183,10 +185,13 @@ hr {
       margin-bottom: 2rem;
       letter-spacing: 0.5px;
       line-height: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 
     &__address {
       letter-spacing: 0.3px;
+      font-size: 1.125rem;
     }
   }
 }
@@ -201,6 +206,7 @@ hr {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+    font-size: 1.125rem;
 
     @include smallDesktop {
       max-width: 700px;
@@ -359,7 +365,8 @@ hr {
 
     &__desc {
       margin: 0 auto;
-      font-size: 1.1rem;
+      font-size: 1.125rem;
+      font-size: 1.125rem;
 
       @include tablet {
         max-width: 350px;
@@ -377,8 +384,8 @@ hr {
 
       a {
         color: $text-white;
-        font-size: 1rem;
         transition: $transition-default;
+        font-size: 1.125rem;
 
         &:hover {
           color: $color-gold;
@@ -433,6 +440,7 @@ hr {
     &__subtitle {
       max-width: 350px;
       margin: 0 auto 2rem;
+      font-size: 1.125rem;
 
       @include laptop {
         max-width: 100%;
@@ -476,7 +484,7 @@ hr {
       }
 
       &__details {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
 
         @include laptop {
           grid-column: 2/4;
@@ -520,6 +528,71 @@ hr {
   }
 }
 // EOF Section Venue
+
+// Section Countdown
+.section-countdown {
+  position: relative;
+  padding: 6rem 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('http://localhost/putubajra/wp-content/uploads/2023/03/banner-3.jpg');
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9) 90%);
+  }
+
+  .countdown {
+    padding: 0 1rem;
+    text-align: center;
+    position: relative;
+
+    &__title {
+      h2 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        letter-spacing: .5px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__quote {
+      max-width: 350px;
+      margin: 0 auto 2rem;
+      text-shadow: -1px 2px 7px rgba(0,0,0,0.39);
+      font-size: 1.125rem;
+      line-height: 1.5;
+    }
+
+    &__timer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.25rem;
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        span {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+// EOF Section Countdown
 
 // Footer
 footer {
