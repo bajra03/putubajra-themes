@@ -29,6 +29,17 @@
 </footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
+<script type="module">
+import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#galleries',
+  children: 'a',
+  pswpModule: () => import('https://unpkg.com/photoswipe'),
+});
+
+lightbox.init();
+</script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ $groom_slider_desktop = get_field('groom_slider_desktop');
 $section_bride = get_field('section_bride');
 $bride_slider_mobile = get_field('bride_slider_mobile');
 $bride_slider_desktop = get_field('bride_slider_desktop');
+$galleries = get_field('galleries');
 // EOF Get All Fields
 
 $datesBanner = strtotime($banners['banner_date']);
@@ -33,7 +34,7 @@ $brideDate = date("d", $datesBride);
 $brideMonth = date("m", $datesBride);
 $brideYear = date("Y", $datesBride);
 
-// print_r($section_bride['socials']['facebook']);
+// print_r($galleries);
 ?>
 <style>
 hr {
@@ -146,32 +147,39 @@ hr {
   <div class="profile__details">
     <figure class="profile__picture">
       <img src="<?php echo $section_groom['profile_picture']['url']; ?>" alt="Profile picture groom" aria-hidden="true"
-        loading="lazy">
+        loading="lazy" data-aos="fade-up" data-aos-delay="50">
     </figure>
     <div class="profile__info">
-      <div class="profile__info__dob"><?php echo $groomDate; ?> . <?php echo $groomMonth; ?></div>
-      <h2 class="profile__info__name text-header"><?php echo $section_groom['name']; ?></h2>
+      <div class="profile__info__dob" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+        <?php echo $groomDate; ?> .
+        <?php echo $groomMonth; ?></div>
+      <h2 class="profile__info__name text-header" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
+        <?php echo $section_groom['name']; ?></h2>
       <hr>
-      <div class="profile__info__desc">
+      <div class="profile__info__desc" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out">
         <?php echo $section_groom['description']; ?>
       </div>
       <hr>
       <?php if ($section_groom['socials']) { ?>
       <ul class="profile__info__socials">
         <?php if ($section_groom['socials']['instagram']) { ?>
-        <li><a href="<?php echo $section_groom['socials']['instagram']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_groom['socials']['instagram']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-instagram social-ig"></i></a></li>
         <?php } ?>
         <?php if ($section_groom['socials']['facebook']) { ?>
-        <li><a href="<?php echo $section_groom['socials']['facebook']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="250" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_groom['socials']['facebook']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-facebook social-fb"></i></a></li>
         <?php } ?>
         <?php if ($section_groom['socials']['tiktok']) { ?>
-        <li><a href="<?php echo $section_groom['socials']['tiktok']; ?>" target="_blank" rel="noopener"><i
+        <li ata-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_groom['socials']['tiktok']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-tiktok social-tiktok"></i></a></li>
         <?php } ?>
         <?php if ($section_groom['socials']['linkedin']) { ?>
-        <li><a href="<?php echo $section_groom['socials']['linkedin']; ?>" target="_blank" rel="noopener"><i
+        <li ata-aos="fade-up" data-aos-delay="350" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_groom['socials']['linkedin']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-linkedin-in social-linkedin"></i></a></li>
         <?php } ?>
       </ul>
@@ -199,32 +207,38 @@ hr {
   <div class="profile__details">
     <figure class="profile__picture">
       <img src="<?php echo $section_bride['profile_picture']['url']; ?>" alt="Profile picture bride" aria-hidden="true"
-        loading="lazy">
+        loading="lazy" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
     </figure>
     <div class="profile__info">
-      <div class="profile__info__dob"><?php echo $brideDate; ?> . <?php echo $brideMonth; ?></div>
-      <h2 class="profile__info__name text-header"><?php echo $section_bride['name']; ?></h2>
+      <div class="profile__info__dob" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+        <?php echo $brideDate; ?> . <?php echo $brideMonth; ?></div>
+      <h2 class="profile__info__name text-header" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
+        <?php echo $section_bride['name']; ?></h2>
       <hr>
-      <div class="profile__info__desc">
+      <div class="profile__info__desc" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out">
         <?php echo $section_bride['description']; ?>
       </div>
       <hr>
       <?php if ($section_bride['socials']) { ?>
       <ul class="profile__info__socials">
         <?php if ($section_bride['socials']['instagram']) { ?>
-        <li><a href="<?php echo $section_bride['socials']['instagram']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_bride['socials']['instagram']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-instagram social-ig"></i></a></li>
         <?php } ?>
         <?php if ($section_bride['socials']['facebook']) { ?>
-        <li><a href="<?php echo $section_bride['socials']['facebook']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="250" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_bride['socials']['facebook']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-facebook social-fb"></i></a></li>
         <?php } ?>
         <?php if ($section_bride['socials']['tiktok']) { ?>
-        <li><a href="<?php echo $section_bride['socials']['tiktok']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_bride['socials']['tiktok']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-tiktok social-tiktok"></i></a></li>
         <?php  } ?>
         <?php if ($section_bride['socials']['linkedin']) { ?>
-        <li><a href="<?php echo $section_bride['socials']['linkedin']; ?>" target="_blank" rel="noopener"><i
+        <li data-aos="fade-up" data-aos-delay="350" data-aos-easing="ease-in-out"><a
+            href="<?php echo $section_bride['socials']['linkedin']; ?>" target="_blank" rel="noopener"><i
               class="fa-brands fa-linkedin-in social-linkedin"></i></a></li>
         <?php } ?>
       </ul>
@@ -238,15 +252,15 @@ hr {
 <!-- Section Venue -->
 <section class="venue">
   <div class="venue__info">
-    <div class="venue__info__title">
+    <div class="venue__info__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
       <h2 class="text-header">Waktu & Tempat</h2>
     </div>
     <hr>
-    <div class="venue__info__subtitle">
+    <div class="venue__info__subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
       <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk
         memberikan doa restu kepada kami pada :</p>
     </div>
-    <div class="venue__info__table">
+    <div class="venue__info__table" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out">
       <div class="venue__info__table__dates">
         <div class="venue__info__table__dates__month">April</div>
         <div class="venue__info__table__dates__date">17</div>
@@ -258,8 +272,8 @@ hr {
           Bhuana,<br> Beng, Kabupaten Gianyar, Bali</div>
       </div>
     </div>
-    <a href="https://goo.gl/maps/pu8Db9E6KeK4mpXTA" target="_blank" rel="noopener" class="btn btn--primary"><i
-        class="fa-solid fa-map"></i> Buka Map</a>
+    <a href="https://goo.gl/maps/pu8Db9E6KeK4mpXTA" target="_blank" rel="noopener" class="btn btn--primary"
+      data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out"><i class="fa-solid fa-map"></i> Buka Map</a>
   </div>
   <div class="venue__map">
     <iframe
@@ -273,14 +287,14 @@ hr {
 <!-- Section Countdown -->
 <section class="section-countdown">
   <div class="countdown">
-    <div class="countdown__title">
+    <div class="countdown__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
       <h2 class="text-header">Menuju Hari Bahagia</h2>
     </div>
     <hr>
-    <div class="countdown__quote">
+    <div class="countdown__quote" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
       Dua jiwa namun satu pikiran, dua hati namun satu perasaan, dua keinginan namun satu tujuan. #satujuan
     </div>
-    <div class="countdown__timer">
+    <div class="countdown__timer" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out">
       <div class="countdown__timer__inner countdown__timer__inner--day">
         <span class="countdown__timer__day">0</span>
         Hari
@@ -301,5 +315,29 @@ hr {
   </div>
 </section>
 <!-- EOF Section Countdown -->
+
+<!-- Section Gallery -->
+<section class="gallery">
+  <div class="gallery__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+    <h2 class="text-header">Moment Bahagia</h2>
+  </div>
+  <hr>
+  <div class="gallery__container grid" id="galleries">
+    <div class="grid-sizer"></div>
+    <?php if($galleries) { ?>
+    <?php foreach($galleries as $key => $gallery ){
+      $dataWidth = $gallery['caption'];
+      $dataWidthArr = explode('x', $dataWidth);
+      ?>
+    <a href="<?php echo $gallery['full_image_url']; ?>" target="_blank" class="grid-item"
+      data-pswp-width="<?php echo $dataWidthArr[0]; ?>" data-pswp-height="<?php echo $dataWidthArr[1]; ?>"
+      data-aos="fade-up" data-aos-delay="<?php echo $key ?>00" data-aos-easing="ease-in-out">
+      <img src="<?php echo $gallery['full_image_url']; ?>" alt="Gallery image" aria-hidden="true">
+    </a>
+    <?php } ?>
+    <?php } ?>
+  </div>
+</section>
+<!-- EOF Section Gallery -->
 
 <?php get_footer('wedding'); ?>

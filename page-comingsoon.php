@@ -15,9 +15,4 @@
 
 <section id="section-comingsoon">
   <h1>Soon!</h1>
-  <ul>
-    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-  </ul>
 </section>
