@@ -618,6 +618,11 @@ hr {
     }
   }
 
+  &__quote {
+    max-width: 350px;
+    margin: 0 auto 2rem;
+  }
+
   &__container {
 
     a {
@@ -665,7 +670,7 @@ hr {
     // margin-bottom: 10px;
   }
 }
-// EOF Section Gallery 
+// EOF Section Gallery
 
 // Back to top
 .to-top {

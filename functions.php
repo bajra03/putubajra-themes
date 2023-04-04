@@ -151,7 +151,7 @@ function putubajra_scripts()
     }
     wp_enqueue_style('fontawesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css', array(), _S_VERSION);
     wp_enqueue_style('swiper-css', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.css', array(), _S_VERSION);
-    wp_enqueue_style('photoswipe-css', 'https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css', array(), _S_VERSION);
+    wp_enqueue_style('photoswipe-css', get_template_directory_uri() . '/css/photoswipe.css', array(), _S_VERSION);
     wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), _S_VERSION);
 
     wp_enqueue_script('putubajra-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
