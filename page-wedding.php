@@ -90,6 +90,10 @@ $brideYear = date("Y", $datesBride);
     }
 </style>
 
+<!-- Section Intro Overlay -->
+
+<!-- EOF Section Intro Overlay -->
+
 <!-- Section Banner -->
 <section class="banner">
     <div class="banner__slider swiper-slider">

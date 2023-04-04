@@ -54,6 +54,12 @@ body {
   background-color: $bg-primary;
   color: $text-white;
   font-family: $text-body-1;
+
+  &.fixbody {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 
 p {

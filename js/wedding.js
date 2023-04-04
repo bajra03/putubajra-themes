@@ -113,13 +113,13 @@ function toggleAudio() {
 
 function playAudio() { 
     myAudio.play(); 
-    isPlaying = false;
+    isPlaying = !isPlaying;
     btnAudioToggle.innerHTML = '<i class="fa-solid fa-pause"></i>';
 } 
 
 function pauseAudio() { 
     myAudio.pause(); 
-    isPlaying = true;
+    isPlaying = !isPlaying;
     btnAudioToggle.innerHTML = '<i class="fa-solid fa-play"></i>';
 } 
 // EOF Toggle Audio Play & Stop
