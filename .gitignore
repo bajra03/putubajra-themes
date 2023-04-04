@@ -1,4 +1,5 @@
 package.lock.json
 css/dist/wedding.css.map
 css/.sass-cache
+css/.sass-cache/*
 .sass-cache
