@@ -316,8 +316,8 @@ hr {
   }
 
   &__picture {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -535,7 +535,6 @@ hr {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('http://localhost/putubajra/wp-content/uploads/2023/03/banner-3.jpg');
 
   &::before {
     content: "";
@@ -599,6 +598,7 @@ hr {
   text-align: center;
 
   &__title {
+    padding: 0 1rem;
     h2 {
       font-size: 2.5rem;
       line-height: 1.5;
