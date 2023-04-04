@@ -134,7 +134,10 @@ const urlParams = new URLSearchParams(url);
 const btnOpenInvitation = document.getElementById('btn-open-invitation');
 const popupInvitationEl = document.getElementById('popup-invitation');
 
-document.querySelector('.popup-invitation__details__name').innerHTML = urlParams.get('to');
+if (urlParams.get('to'))
+{
+  document.querySelector('.popup-invitation__details__name').innerHTML = urlParams.get('to');
+}
 btnOpenInvitation.addEventListener('click', function (e)
 {
   e.preventDefault();
