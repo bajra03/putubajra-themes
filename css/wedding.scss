@@ -16,6 +16,7 @@ $color-tiktok: $text-white;
 $color-linkedin: #0a66c2;
 $color-fb: #1877f2;
 $color-gold: #A47E3B;
+$color-red: #99003b;
 $transition-default: 0.2s ease-in-out;
 $gradient-y-mobile: linear-gradient(0deg, rgba(0, 0, 0, 1) 32.86%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 1) 98%);
 $gradient-y-desktop: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 98%);
@@ -697,6 +698,11 @@ hr {
         justify-content: center;
         align-items: center;
         box-shadow: $box-shadow;
+        transition: $transition-default;
+
+        &:hover {
+          color: $text-white;
+        }
     }
 }
 // EOF Back to top
@@ -727,6 +733,11 @@ hr {
         align-items: center;
         box-shadow: $box-shadow;
         position: relative;
+        transition: $transition-default;
+
+        &:hover {
+          color: $text-white;
+        }
     }
 }
 // EOF Toggle Backsound Audio
@@ -735,5 +746,21 @@ hr {
 footer {
   text-align: center;
   padding: 3rem 0;
+
+  .site-info {
+    font-size: .85rem;
+    letter-spacing: .5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-gold;
+    transition: $transition-default;
+  }
+
+  svg {
+    color: $color-gold;
+    fill: $color-gold;
+  }
 }
 // EOF Footer
