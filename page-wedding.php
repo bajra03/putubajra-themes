@@ -322,12 +322,4 @@ $brideYear = date("Y", $datesBride);
 </section>
 <!-- EOF Section Gallery -->
 
-<!-- Back to top -->
-<div class="to-top">
-    <a href="#">
-        <i class="fa-solid fa-angle-up"></i>
-    </a>
-</div>
-<!-- EOF Back to top -->
-
 <?php get_footer('wedding'); ?>

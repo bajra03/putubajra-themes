@@ -80,3 +80,47 @@ const iso = new Isotope(grid, {
 });
 // EOF Galleries
 
+// Scroll top
+const btnToTop = document.getElementById('btn-to-top');
+const btnToggleAudio = document.getElementById('btn-toggle-audio');
+
+btnToTop.addEventListener('click', function (e) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+const toTopBtnDisplay = function () {
+    window.scrollY > 200 ? btnToTop.parentElement.classList.add("show") : btnToTop.parentElement.classList.remove("show");
+    window.scrollY > 200 ? btnToggleAudio.parentElement.classList.add("show") : btnToggleAudio.parentElement.classList.remove("show");
+};
+
+window.addEventListener("scroll", toTopBtnDisplay);
+// EOF Scroll top
+
+// Toggle Audio Play & Stop
+const myAudio = document.getElementById('myAudio');
+const btnAudioToggle = document.getElementById('btn-toggle-audio');
+let isPlaying = true;
+
+btnAudioToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleAudio();
+});
+
+function toggleAudio() { 
+    isPlaying ? playAudio() : pauseAudio();
+}
+
+function playAudio() { 
+    myAudio.play(); 
+    isPlaying = false;
+    btnAudioToggle.innerHTML = '<i class="fa-solid fa-pause"></i>';
+} 
+
+function pauseAudio() { 
+    myAudio.pause(); 
+    isPlaying = true;
+    btnAudioToggle.innerHTML = '<i class="fa-solid fa-play"></i>';
+} 
+// EOF Toggle Audio Play & Stop
+
