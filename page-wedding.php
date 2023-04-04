@@ -20,6 +20,8 @@ $bride_slider_desktop = get_field('bride_slider_desktop');
 $section_countdown = get_field('section_countdown');
 $section_gallery = get_field('section_gallery');
 $galleries = get_field('gallery_images');
+$popup_invitation_bg = get_field('background_image_popup_invitation');
+$backsound_url = get_field('back_song_url');
 // EOF Get All Fields
 
 $datesBanner = strtotime($banners['banner_date']);
@@ -92,7 +94,20 @@ hr {
 </style>
 
 <!-- Section Intro Overlay -->
-
+<section id="popup-invitation" class="popup-invitation"
+  style="background-image: url(<?php echo $popup_invitation_bg["url"]; ?>);">
+  <div class="popup-invitation__container">
+    <div class="popup-invitation__details">
+      <div>Kpd Bpk/Ibu/Saudara/i</div>
+      <div class="popup-invitation__details__name text-header">
+        Nama Tamu
+      </div>
+      <div>Mohon maaf apabila ada kesalahan penulisan nama/gelar</div>
+      <button class="btn btn--primary" id="btn-open-invitation"><i class="fa-regular fa-envelope-open"></i> Buka
+        Undangan</button>
+    </div>
+  </div>
+</section>
 <!-- EOF Section Intro Overlay -->
 
 <!-- Section Banner -->
@@ -360,5 +375,13 @@ hr {
   </div>
 </section>
 <!-- EOF Section Gallery -->
+
+<!-- Audio -->
+<audio id="myAudio" loop>
+  <source src="<?php echo $backsound_url; ?>" type="audio/ogg">
+  <source src="<?php echo $backsound_url; ?>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<!-- EOF Audio -->
 
 <?php get_footer('wedding'); ?>

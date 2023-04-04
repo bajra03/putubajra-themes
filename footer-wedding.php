@@ -25,13 +25,6 @@
 </div>
 <!-- EOF Back to top -->
 
-<!-- Audio -->
-<audio id="myAudio" loop>
-  <source src="<?php echo get_template_directory_uri(); ?>/assets/audios/audio-1.mp3" type="audio/ogg">
-  <source src="<?php echo get_template_directory_uri(); ?>/assets/audios/audio-1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<!-- EOF Audio -->
 
 <footer id="colophon" class="site-footer">
   <div class="site-info">

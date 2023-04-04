@@ -107,20 +107,36 @@ btnAudioToggle.addEventListener('click', function (e) {
     toggleAudio();
 });
 
-function toggleAudio() { 
+function toggleAudio() {
     isPlaying ? playAudio() : pauseAudio();
 }
 
-function playAudio() { 
-    myAudio.play(); 
+function playAudio() {
+    myAudio.play();
     isPlaying = !isPlaying;
     btnAudioToggle.innerHTML = '<i class="fa-solid fa-pause"></i>';
-} 
+}
 
-function pauseAudio() { 
-    myAudio.pause(); 
+function pauseAudio() {
+    myAudio.pause();
     isPlaying = !isPlaying;
     btnAudioToggle.innerHTML = '<i class="fa-solid fa-play"></i>';
-} 
+}
 // EOF Toggle Audio Play & Stop
+
+// Get invited name
+const url = window.location.search;
+const urlParams = new URLSearchParams(url);
+const btnOpenInvitation = document.getElementById('btn-open-invitation');
+const popupInvitationEl = document.getElementById('popup-invitation');
+
+document.querySelector('.popup-invitation__details__name').innerHTML = urlParams.get('to');
+btnOpenInvitation.addEventListener('click', function (e)
+{
+  e.preventDefault();
+  console.log('open invitation');
+  popupInvitationEl.classList.add('hide');
+  btnAudioToggle.click();
+});
+// EOF Get invited name
 
