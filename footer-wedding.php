@@ -13,13 +13,13 @@
 ?>
 <!-- Toggle audio -->
 <div class="toggle-audio">
-  <a href="#" id="btn-toggle-audio"><i class="fa-solid fa-play"></i></a>
+  <a href="" id="btn-toggle-audio"><i class="fa-solid fa-play"></i></a>
 </div>
 <!-- EOF Toggle audio -->
 
 <!-- Back to top -->
 <div class="to-top">
-  <a href="#" id="btn-to-top">
+  <a href="" id="btn-to-top">
     <i class="fa-solid fa-angle-up"></i>
   </a>
 </div>

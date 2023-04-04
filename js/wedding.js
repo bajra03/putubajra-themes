@@ -1,3 +1,5 @@
+document.body.classList.add('fixbody');
+
 AOS.init({
     once: true
 });
@@ -84,7 +86,9 @@ const iso = new Isotope(grid, {
 const btnToTop = document.getElementById('btn-to-top');
 const btnToggleAudio = document.getElementById('btn-toggle-audio');
 
-btnToTop.addEventListener('click', function (e) {
+btnToTop.addEventListener('click', function (e)
+{
+  e.preventDefault();
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
@@ -134,9 +138,9 @@ document.querySelector('.popup-invitation__details__name').innerHTML = urlParams
 btnOpenInvitation.addEventListener('click', function (e)
 {
   e.preventDefault();
-  console.log('open invitation');
   popupInvitationEl.classList.add('hide');
   btnAudioToggle.click();
+  document.body.classList.remove('fixbody');
 });
 // EOF Get invited name
 

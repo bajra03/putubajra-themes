@@ -163,6 +163,7 @@ hr {
 
     button {
       margin-top: 25px;
+      cursor: pointer;
     }
   }
 }
@@ -665,6 +666,7 @@ hr {
 .gallery {
   padding: 5rem 0;
   text-align: center;
+  min-height: 100vh;
 
   &__title {
     padding: 0 1rem;
@@ -803,6 +805,8 @@ hr {
 footer {
   text-align: center;
   padding: 3rem 0;
+  position: relative;
+  display: block;
 
   .site-info {
     font-size: .85rem;
