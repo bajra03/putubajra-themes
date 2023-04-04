@@ -696,7 +696,7 @@ hr {
 }
 // EOF Back to top
 
-// Toggle Audio
+// Toggle Backsound Audio
 .toggle-audio {
     position: fixed;
     bottom: 60px;
@@ -721,9 +721,10 @@ hr {
         justify-content: center;
         align-items: center;
         box-shadow: $box-shadow;
+        position: relative;
     }
 }
-// EOF Toggle Audio
+// EOF Toggle Backsound Audio
 
 // Footer
 footer {
