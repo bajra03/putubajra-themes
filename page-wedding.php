@@ -3,6 +3,7 @@
 /**
  * Template Name: Page Wedding
  */
+
 get_header('wedding');
 
 // Get All Fields
