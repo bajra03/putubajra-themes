@@ -21,6 +21,7 @@ $section_countdown = get_field('section_countdown');
 $section_gallery = get_field('section_gallery');
 $galleries = get_field('gallery_images');
 $popup_invitation_bg = get_field('background_image_popup_invitation');
+$popup_invitation_bg_mobile = get_field('background_image_popup_invitation_mobile');
 $backsound_url = get_field('back_song_url');
 // EOF Get All Fields
 
@@ -47,6 +48,13 @@ hr {
 }
 
 @media (min-width: 768px) {
+
+  /* Popup Invitation Banner */
+  .popup-invitation {
+    background-image: url(<?php echo $popup_invitation_bg["url"]; ?>);
+  }
+
+  /* EOF Popup Invitation Banner */
 
   /* Banner Section */
   <?php foreach ($banner_sliders_desktop as $key=> $banner) {
@@ -95,7 +103,7 @@ hr {
 
 <!-- Section Intro Overlay -->
 <section id="popup-invitation" class="popup-invitation"
-  style="background-image: url(<?php echo $popup_invitation_bg["url"]; ?>);">
+  style="background-image: url(<?php echo $popup_invitation_bg_mobile["url"]; ?>);">
   <div class="popup-invitation__container">
     <div class="popup-invitation__details">
       <div>Kpd Bpk/Ibu/Saudara/i</div>
