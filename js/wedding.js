@@ -2,7 +2,6 @@ document.body.classList.add("fixbody");
 window.addEventListener(
   "load",
   function () {
-    console.log("content loaded");
     AOS.init({
       once: true,
     });
