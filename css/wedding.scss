@@ -7,20 +7,20 @@ $text-header-2: "Arizonia", cursive;
 $text-header-3: "Alex Brush", cursive;
 $text-body-1: "Oswald", sans-serif;
 $text-body-2: "Roboto", sans-serif;
-$text-body-3: 'Josefin Slab', serif;
+$text-body-3: "Josefin Slab", serif;
 $text-white: #f8fafc;
 $bg-primary: #000000;
-$bg-primary-800:#191919;
+$bg-primary-800: #191919;
 $color-ig: #e4405f;
 $color-tiktok: $text-white;
 $color-linkedin: #0a66c2;
 $color-fb: #1877f2;
-$color-gold: #A47E3B;
+$color-gold: #a47e3b;
 $color-red: #99003b;
 $transition-default: 0.2s ease-in-out;
 $gradient-y-mobile: linear-gradient(0deg, rgba(0, 0, 0, 1) 32.86%, rgba(0, 0, 0, 0.3) 65%, rgba(0, 0, 0, 1) 98%);
 $gradient-y-desktop: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 98%);
-$box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.3);
+$box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.3);
 
 // Function
 @mixin tablet {
@@ -47,7 +47,7 @@ $box-shadow: 0px 0px 40px -5px rgba(0,0,0,0.3);
   box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,9 +57,9 @@ body {
   font-family: $text-body-1;
 
   &.fixbody {
-    position: fixed;
-    top: 0;
-    left: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
   }
 }
 
@@ -313,8 +313,8 @@ hr {
           right: 0;
 
           @include laptop {
-            background: rgb(0,0,0);
-            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 41%);
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 41%);
           }
         }
       }
@@ -334,8 +334,8 @@ hr {
           left: 0;
 
           @include laptop {
-            background: rgb(0,0,0);
-            background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 41%);
+            background: rgb(0, 0, 0);
+            background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 41%);
           }
         }
       }
@@ -423,7 +423,7 @@ hr {
       font-size: 0.8rem;
       line-height: 1.5;
       letter-spacing: 0.5px;
-      margin-bottom: .75em;
+      margin-bottom: 0.75em;
     }
 
     &__name {
@@ -462,8 +462,6 @@ hr {
       }
     }
   }
-
-
 }
 // EOF Section Profile Details
 
@@ -497,7 +495,7 @@ hr {
       h2 {
         font-size: 2.5rem;
         line-height: 1.5;
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         margin-bottom: 1rem;
 
         @include laptop {
@@ -613,7 +611,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9) 90%);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 90%);
   }
 
   .countdown {
@@ -625,7 +623,7 @@ hr {
       h2 {
         font-size: 2.5rem;
         line-height: 1.5;
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         margin-bottom: 1rem;
       }
     }
@@ -633,7 +631,7 @@ hr {
     &__quote {
       max-width: 350px;
       margin: 0 auto 2rem;
-      text-shadow: -1px 2px 7px rgba(0,0,0,0.39);
+      text-shadow: -1px 2px 7px rgba(0, 0, 0, 0.39);
       font-size: 1.125rem;
       line-height: 1.5;
     }
@@ -673,7 +671,7 @@ hr {
     h2 {
       font-size: 2.5rem;
       line-height: 1.5;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       margin-bottom: 1rem;
     }
   }
@@ -684,7 +682,6 @@ hr {
   }
 
   &__container {
-
     a {
       position: relative;
       box-sizing: border-box;
@@ -706,7 +703,7 @@ hr {
 
   /* clear fix */
   .grid:after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
   }
@@ -734,70 +731,70 @@ hr {
 
 // Back to top
 .to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: $bg-primary-800;
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    z-index: 99;
-    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $bg-primary-800;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  z-index: 99;
+  display: none;
 
-    &.show {
-        display: block;
+  &.show {
+    display: block;
+  }
+
+  a {
+    color: $color-gold;
+    line-height: 1em;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    transition: $transition-default;
+
+    &:hover {
+      color: $text-white;
     }
-
-    a {
-        color: $color-gold;
-        line-height: 1em;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        box-shadow: $box-shadow;
-        transition: $transition-default;
-
-        &:hover {
-          color: $text-white;
-        }
-    }
+  }
 }
 // EOF Back to top
 
 // Toggle Backsound Audio
 .toggle-audio {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    background: $bg-primary-800;
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
-    z-index: 99;
-    display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: $bg-primary-800;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  z-index: 99;
+  display: none;
 
-    &.show {
-        display: block;
+  &.show {
+    display: block;
+  }
+
+  a {
+    color: $color-gold;
+    line-height: 1em;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    position: relative;
+    transition: $transition-default;
+
+    &:hover {
+      color: $text-white;
     }
-
-    a {
-        color: $color-gold;
-        line-height: 1em;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        box-shadow: $box-shadow;
-        position: relative;
-        transition: $transition-default;
-
-        &:hover {
-          color: $text-white;
-        }
-    }
+  }
 }
 // EOF Toggle Backsound Audio
 
@@ -809,8 +806,8 @@ footer {
   display: block;
 
   .site-info {
-    font-size: .85rem;
-    letter-spacing: .5px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
   }
 
   a {
