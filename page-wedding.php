@@ -51,7 +51,7 @@ hr {
 
   /* Popup Invitation Banner */
   .popup-invitation {
-    background-image: url(<?php echo $popup_invitation_bg["url"]; ?>);
+    background-image: url(<?php echo $popup_invitation_bg["url"]; ?>) !important;
   }
 
   /* EOF Popup Invitation Banner */
