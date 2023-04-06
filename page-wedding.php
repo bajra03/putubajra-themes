@@ -294,8 +294,12 @@ hr {
 <section class="venue">
   <div class="venue__container">
     <div class="venue__info">
+      <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
+          aria-hidden="true">
+      </figure>
       <div class="venue__info__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
-        <h2 class="text-header">Waktu & Tempat</h2>
+        <h2 class="text-header">Tempat & Waktu</h2>
       </div>
       <hr>
       <div class="venue__info__subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
@@ -333,6 +337,10 @@ hr {
   <?php if ($section_countdown['background_image']) { ?>style="background-image: url(<?php echo $section_countdown['background_image']['url']; ?>);"
   <?php } ?>>
   <div class="countdown">
+    <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+      <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
+        aria-hidden="true">
+    </figure>
     <div class="countdown__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
       <h2 class="text-header">Menuju Hari Bahagia</h2>
     </div>
@@ -365,6 +373,10 @@ hr {
 <!-- Section Gallery -->
 <section class="gallery">
   <div class="gallery__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+    <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+      <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
+        aria-hidden="true">
+    </figure>
     <?php if ($section_gallery) { ?>
     <h2 class="text-header"><?php echo $section_gallery['title']; ?></h2>
     <?php if ($section_gallery['quote']) { ?>
