@@ -134,7 +134,10 @@ window.addEventListener(
     const popupInvitationEl = document.getElementById("popup-invitation");
 
     if (urlParams.get("to")) {
-      document.querySelector(".popup-invitation__details__name").innerHTML = urlParams.get("to");
+      let guestName = urlParams.get("to");
+      let newGuestName = guestName.split("-").join(" ");
+      console.log(newGuestName);
+      document.querySelector(".popup-invitation__details__name").innerHTML = newGuestName;
     }
 
     btnOpenInvitation.addEventListener("click", function (e) {

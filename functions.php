@@ -195,3 +195,57 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
+
+// Add API endpoint for wedding messages
+add_action('rest_api_init', function(){
+    # domain/wp-json/
+    register_rest_route('wedding-messages/v1', '/message', array(
+        'methods' => 'POST',
+        'callback' => 'wedding_post_message',
+    ));
+    
+    register_rest_route('wedding-messages/v1', '/message', array(
+        'methods' => 'GET',
+        'callback' => 'wedding_get_message',
+    ));
+
+    register_rest_route('wedding-share/v1', '/list', array(
+        'methods' => 'POST',
+        'callback' => 'wedding_post_list',
+    ));
+});
+
+function wedding_post_message($data){
+    global $wpdb;
+    
+    $name = $data['name'];
+    $messages = $data['messages'];
+    $attendance = $data['attendance'];
+    $table_name = $wpdb->prefix . 'wedding_messages';
+
+    $data = array(
+        'name' => $name,
+        'attendance' => $attendance,
+        'messages' => $messages,
+    );
+
+    $data_format = array('%s', '%s', '%s');
+    
+    $wpdb->insert($table_name,$data,$data_format);
+    $wpdb->print_error();
+}
+
+function wedding_get_message(){
+    global $wpdb;
+
+    $table_name = $wpdb->prefix . 'wedding_messages';
+
+    $messages = $wpdb->get_results('SELECT * FROM ' . $table_name . ' ORDER BY created_at DESC');
+    echo json_encode($messages);
+}
+
+function wedding_post_list($data){
+    global $wpdb;
+
+    
+}
