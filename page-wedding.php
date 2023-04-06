@@ -396,8 +396,9 @@ hr {
 <!-- Section Closing -->
 <section id="closing" class="closing"
   style="background-image: url(<?php echo $section_closing['closing_bg_mobile']['url']; ?>);">
-  <div class="closing__text"><?php echo $section_closing['closing_text'] ?></div>
-  <div class="closing__title">
+  <div class="closing__text" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+    <?php echo $section_closing['closing_text'] ?></div>
+  <div class="closing__title" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
     <h2 class="text-header">"Om Shanti Shanti Shanti Om"</h2>
   </div>
 </section>
