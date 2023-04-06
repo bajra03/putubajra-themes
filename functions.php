@@ -155,6 +155,7 @@ function putubajra_scripts()
     wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), _S_VERSION);
 
     wp_enqueue_script('putubajra-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
+    wp_enqueue_script('jQuery-js', 'https://code.jquery.com/jquery-3.6.4.slim.min.js', array(), _S_VERSION, true);
     wp_enqueue_script('fontawesome-js', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js', array(), _S_VERSION, true);
     wp_enqueue_script('swiper-js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js', array(), _S_VERSION, true);
     wp_enqueue_script('isotope-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js', array(), _S_VERSION, true);
@@ -203,7 +204,7 @@ add_action('rest_api_init', function(){
         'methods' => 'POST',
         'callback' => 'wedding_post_message',
     ));
-    
+
     register_rest_route('wedding-messages/v1', '/message', array(
         'methods' => 'GET',
         'callback' => 'wedding_get_message',
@@ -217,7 +218,7 @@ add_action('rest_api_init', function(){
 
 function wedding_post_message($data){
     global $wpdb;
-    
+
     $name = $data['name'];
     $messages = $data['messages'];
     $attendance = $data['attendance'];
@@ -230,7 +231,7 @@ function wedding_post_message($data){
     );
 
     $data_format = array('%s', '%s', '%s');
-    
+
     $wpdb->insert($table_name,$data,$data_format);
     $wpdb->print_error();
 }
@@ -247,5 +248,5 @@ function wedding_get_message(){
 function wedding_post_list($data){
     global $wpdb;
 
-    
+
 }
