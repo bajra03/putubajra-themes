@@ -23,6 +23,7 @@ $galleries = get_field('gallery_images');
 $popup_invitation_bg = get_field('background_image_popup_invitation');
 $popup_invitation_bg_mobile = get_field('background_image_popup_invitation_mobile');
 $backsound_url = get_field('back_song_url');
+$section_closing = get_field('section_closing');
 // EOF Get All Fields
 
 $datesBanner = strtotime($banners['banner_date']);
@@ -40,7 +41,7 @@ $brideDate = date("d", $datesBride);
 $brideMonth = date("m", $datesBride);
 $brideYear = date("Y", $datesBride);
 
-// print_r($section_countdown);
+// print_r($section_closing['closing_bg_mobile']['url']);
 ?>
 <style>
 hr {
@@ -55,6 +56,7 @@ hr {
   }
 
   /* EOF Popup Invitation Banner */
+
 
   /* Banner Section */
   <?php foreach ($banner_sliders_desktop as $key=> $banner) {
@@ -97,6 +99,13 @@ hr {
 
   ?>
   /* EOF Bride Slider */
+
+  /* Closing Background */
+  #closing {
+    background-image: url(<?php echo $section_closing['closing_bg']['url']; ?>) !important;
+  }
+
+  /* EOF Closing Background */
 }
 
 </style>
@@ -383,6 +392,16 @@ hr {
   </div>
 </section>
 <!-- EOF Section Gallery -->
+
+<!-- Section Closing -->
+<section id="closing" class="closing"
+  style="background-image: url(<?php echo $section_closing['closing_bg_mobile']['url']; ?>);">
+  <div class="closing__text"><?php echo $section_closing['closing_text'] ?></div>
+  <div class="closing__title">
+    <h2 class="text-header">"Om Shanti Shanti Shanti Om"</h2>
+  </div>
+</section>
+<!-- EOF Section Closing -->
 
 <!-- Audio -->
 <audio id="myAudio" loop>
