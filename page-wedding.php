@@ -408,6 +408,10 @@ hr {
 <!-- Section Closing -->
 <section id="closing" class="closing"
   style="background-image: url(<?php echo $section_closing['closing_bg_mobile']['url']; ?>);">
+  <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
+        aria-hidden="true">
+    </figure>
   <div class="closing__text">
     <?php echo $section_closing['closing_text'] ?></div>
   <div class="closing__title">
