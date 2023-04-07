@@ -283,6 +283,12 @@ hr {
 
     figure {
       margin-bottom: 2rem;
+      max-width: 300px;
+      margin: 0 auto;
+
+      img {
+        width: auto;
+      }
     }
 
     h2 {

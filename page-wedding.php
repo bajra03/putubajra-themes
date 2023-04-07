@@ -41,7 +41,7 @@ $brideDate = date("d", $datesBride);
 $brideMonth = date("m", $datesBride);
 $brideYear = date("Y", $datesBride);
 
-// print_r($section_closing['closing_bg_mobile']['url']);
+// print_r($intros['intro_image']['width']);
 ?>
 <style>
 hr {
@@ -160,7 +160,7 @@ hr {
   <div class="intro__container">
     <?php if ($intros["intro_image"]["url"]) { ?>
     <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
-      <img src="<?php echo $intros["intro_image"]["url"]; ?>" alt="Intro image" aria-hidden="true" loading="lazy">
+      <img src="<?php echo $intros["intro_image"]["url"]; ?>" alt="Intro image" aria-hidden="true" loading="lazy" width="<?php echo $intros['intro_image']['width']; ?>">
     </figure>
     <?php } ?>
     <h2 class="text-header" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
