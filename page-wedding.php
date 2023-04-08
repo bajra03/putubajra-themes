@@ -408,7 +408,7 @@ hr {
 
 <!-- Section Amplop Online -->
 <section class="amplop">
-  <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+  <figure>
     <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
       aria-hidden="true">
   </figure>
