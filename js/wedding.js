@@ -1,4 +1,5 @@
 document.body.classList.add("fixbody");
+
 window.addEventListener(
   "load",
   function () {
@@ -182,8 +183,7 @@ window.addEventListener(
         {
           copyMessages[i].classList.remove('show');
         }, 1000);
-      })
-
+      });
     }
     // EOF Popup Amplop Digital
   },

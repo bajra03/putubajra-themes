@@ -373,8 +373,8 @@ hr {
 
 <!-- Section Gallery -->
 <section class="gallery">
-  <div class="gallery__title" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
-    <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+  <div class="gallery__title" data-aos="fade-up" data-aos-delay="50">
+    <figure data-aos="fade-up" data-aos-delay="50">
       <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
         aria-hidden="true">
     </figure>
@@ -397,7 +397,7 @@ hr {
             ?>
     <a href="<?php echo $gallery['full_image_url']; ?>" target="_blank" class="grid-item"
       data-pswp-width="<?php echo $dataWidthArr[0]; ?>" data-pswp-height="<?php echo $dataWidthArr[1]; ?>"
-      data-aos="fade-up" data-aos-delay="<?php echo $key ?>00" data-aos-easing="ease-in-out">
+      data-aos="fade-up" data-aos-delay="10<?php echo $key ?>">
       <img src="<?php echo $gallery['full_image_url']; ?>" alt="Gallery image" aria-hidden="true">
     </a>
     <?php } ?>
