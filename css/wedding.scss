@@ -735,6 +735,107 @@ hr {
 }
 // EOF Section Gallery
 
+// Section Amplop
+.amplop {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+
+  a {
+    color: $color-gold;
+    text-decoration: none;
+  }
+
+  &__wrapper {
+    padding: 0 1rem;
+  }
+
+  &__title {
+    h2 {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      letter-spacing: .5px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    letter-spacing: .5px;
+  }
+
+  &__btn-wrapper {
+    margin-top: 2rem;
+  }
+}
+
+.amplop-popup {
+  display: flex;
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    line-height: 1em;
+  }
+
+  &__container {
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: $bg-primary-800;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+
+    a {
+      color: $color-gold;
+    }
+  }
+
+  &__inner {
+    padding: 40px 20px 45px;
+  }
+
+  &__title {
+    font-size: 1.85rem;
+  }
+
+  &__detail {
+    &__account {
+      &__name {
+        font-size: 1.15rem;
+      }
+
+      &__bank {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        line-height: 1.5;
+
+        a {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+// EOF Section Amplop
+
 // Section Closing
 .closing {
   padding: 25rem 0 8rem;

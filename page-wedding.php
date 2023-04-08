@@ -120,8 +120,8 @@ hr {
         Nama Tamu
       </div>
       <div>Mohon maaf apabila ada kesalahan penulisan nama/gelar</div>
-      <button class="btn btn--primary" id="btn-open-invitation"><i class="fa-regular fa-envelope-open"></i> Buka
-        Undangan</button>
+      <button class="btn btn--primary" id="btn-open-invitation">Buka Undangan <i
+          class="fa-regular fa-envelope-open"></i></button>
     </div>
   </div>
 </section>
@@ -160,7 +160,8 @@ hr {
   <div class="intro__container">
     <?php if ($intros["intro_image"]["url"]) { ?>
     <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
-      <img src="<?php echo $intros["intro_image"]["url"]; ?>" alt="Intro image" aria-hidden="true" loading="lazy" width="<?php echo $intros['intro_image']['width']; ?>">
+      <img src="<?php echo $intros["intro_image"]["url"]; ?>" alt="Intro image" aria-hidden="true" loading="lazy"
+        width="<?php echo $intros['intro_image']['width']; ?>">
     </figure>
     <?php } ?>
     <h2 class="text-header" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out">
@@ -404,6 +405,57 @@ hr {
   </div>
 </section>
 <!-- EOF Section Gallery -->
+
+<!-- Section Amplop Online -->
+<section class="amplop">
+  <figure data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
+    <img src="<?php echo get_template_directory_uri() ?>/assets/images/ornament-2.png" alt="Ornament"
+      aria-hidden="true">
+  </figure>
+  <div class="amplop__title">
+    <h2 class="text-header">Amplop Online</h2>
+  </div>
+  <div class="amplop__wrapper">
+    <hr>
+    <div class="amplop__text">
+      Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika memberi adalah ungkapan tanda kasih
+      Anda,
+      Anda dapat memberi kado secara online/cashless.
+    </div>
+    <div class="amplop__btn-wrapper">
+      <a href="#" class="btn btn--primary" id="btn-amplop">Amplop Digital <i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+<section class="amplop-popup" id="amplop-popup">
+  <div class="amplop-popup__container">
+    <a href="#" id="amplop-popup__close" class="amplop-popup__close"><i class="fa-regular fa-circle-xmark"></i></a>
+    <div class="amplop-popup__inner">
+      <div class="amplop-popup__title">
+        <h3 class="text-header">Kirim Hadiah</h3>
+      </div>
+      <hr>
+      <div class="amplop-popup__detail">
+        <div class="amplop-popup__detail__account">
+          <div class="amplop-popup__detail__account__name">Ida Bagus Putu Bajra</div>
+          <div class="amplop-popup__detail__account__bank">
+            <span class="amplop-popup__detail__account__bank__detail">BCA : 7705214255</span>
+            <a href="#" data-bank="7705214255"><i class="fa-regular fa-copy"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="amplop-popup__detail__account">
+          <div class="amplop-popup__detail__account__name">Ida Ayu Putri Widiantari</div>
+          <div class="amplop-popup__detail__account__bank">
+            <span class="amplop-popup__detail__account__bank__detail">BNI : 0692694136</span>
+            <a href="#" data-bank="0692694136"><i class="fa-regular fa-copy"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- EOF Section Amplop Online -->
 
 <!-- Section Closing -->
 <section id="closing" class="closing"
