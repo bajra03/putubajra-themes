@@ -147,6 +147,45 @@ window.addEventListener(
       document.body.classList.remove("fixbody");
     });
     // EOF Get invited name
+
+    // Popup Amplop Digital
+    const btnOpenAmplop = document.getElementById('btn-amplop');
+    const amplopPopup = document.getElementById('amplop-popup');
+    const closePopupAmplop = document.getElementById('amplop-popup__close');
+    const btnCopyBank = document.querySelectorAll('.amplop-popup__detail__account__bank__copy');
+    const copyMessages = document.querySelectorAll('.amplop-popup__detail__account__bank__message');
+
+    btnOpenAmplop.addEventListener('click', function (e)
+    {
+      e.preventDefault();
+      amplopPopup.classList.add('show');
+      document.body.classList.add("fixbody");
+    });
+
+    closePopupAmplop.addEventListener('click', function (e)
+    {
+      e.preventDefault();
+      amplopPopup.classList.remove('show');
+      document.body.classList.remove("fixbody");
+    });
+
+    for (let i = 0; i < btnCopyBank.length; i++)
+    {
+      btnCopyBank[i].addEventListener('click', function (e)
+      {
+        e.preventDefault();
+        const dataBank = this.getAttribute('data-bank');
+        navigator.clipboard.writeText(dataBank);
+        copyMessages[i].classList.add('show');
+
+        setTimeout(function ()
+        {
+          copyMessages[i].classList.remove('show');
+        }, 1000);
+      })
+
+    }
+    // EOF Popup Amplop Digital
   },
   false
 ); // EOF Document on load

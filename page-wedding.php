@@ -440,7 +440,9 @@ hr {
           <div class="amplop-popup__detail__account__name">Ida Bagus Putu Bajra</div>
           <div class="amplop-popup__detail__account__bank">
             <span class="amplop-popup__detail__account__bank__detail">BCA : 7705214255</span>
-            <a href="#" data-bank="7705214255"><i class="fa-regular fa-copy"></i></a>
+            <a href="#" data-bank="7705214255" class="amplop-popup__detail__account__bank__copy"><i
+                class="fa-regular fa-copy"></i></a>
+            <div class="amplop-popup__detail__account__bank__message">Copied</div>
           </div>
         </div>
         <hr>
@@ -448,7 +450,9 @@ hr {
           <div class="amplop-popup__detail__account__name">Ida Ayu Putri Widiantari</div>
           <div class="amplop-popup__detail__account__bank">
             <span class="amplop-popup__detail__account__bank__detail">BNI : 0692694136</span>
-            <a href="#" data-bank="0692694136"><i class="fa-regular fa-copy"></i></a>
+            <a href="#" data-bank="0692694136" class="amplop-popup__detail__account__bank__copy"><i
+                class="fa-regular fa-copy"></i></a>
+            <div class="amplop-popup__detail__account__bank__message">Copied</div>
           </div>
         </div>
       </div>
