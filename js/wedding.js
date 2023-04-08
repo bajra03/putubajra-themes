@@ -1,12 +1,22 @@
 document.body.classList.add("fixbody");
 
+$(function ()
+{
+  AOS.init({
+    once: true,
+  });
+})
+
 window.addEventListener(
   "load",
-  function () {
-    AOS.init({
-      once: true,
-    });
+  function ()
+  {
+    if (document.readyState == 'complete')
+    {
+      AOS.refresh();
+    }
 
+    // console.log(document.readyState)
     const generalSliderOpt = {
       effect: "fade",
       loop: true,
